@@ -14,7 +14,7 @@
         "GitHub.copilot"
       ],
       "settings": {
-          "python.defaultInterpreterPath": ".venv/bin/python",
+          "python.defaultInterpreterPath": "${containerWorkspaceFolder}/.venv/bin/python",
           "python.terminal.activateEnvInCurrentTerminal": true
       }
      }
