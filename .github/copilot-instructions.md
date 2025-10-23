@@ -14,8 +14,6 @@ Begin with a concise checklist (3-7 bullets) of what you will do; keep items con
 - `requests` (accessing APIs)
 - `seaborn`, `matplotlib` (making visualizations)
 - `streamlit` (building simple web apps)
-- `dotenv` (reading environment variables)
-- `IPython.display` (showing outputs inside notebooks)
 - `jupyter` (notebook cells and visualization)
 - `loguru` (logging actions)
 - Do not use advanced or less common libraries unless users specifically ask for them.
