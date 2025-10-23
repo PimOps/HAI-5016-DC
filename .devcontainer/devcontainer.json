@@ -12,8 +12,13 @@
         "ms-toolsai.datawrangler",
         "esbenp.prettier-vscode",
         "GitHub.copilot"
-      ]
+      ],
+      "settings": {
+          "python.defaultInterpreterPath": ".venv/bin/python",
+          "python.terminal.activateEnvInCurrentTerminal": true
+      }
      }
     },
-    "postCreateCommand": "uv venv --clear && uv pip install -r requirements.txt"
+    "postCreateCommand": "uv venv --clear && uv pip install -r requirements.txt",
+    "postStartCommand": "bash -lc 'if [ -f \"${containerWorkspaceFolder}/.venv/bin/activate\" ] && ! grep -Fq \"source ${containerWorkspaceFolder}/.venv/bin/activate\" ~/.bashrc; then echo \"\\n# Auto-activate project venv\\nif [ -f \\\"${containerWorkspaceFolder}/.venv/bin/activate\\\" ]; then source \\\"${containerWorkspaceFolder}/.venv/bin/activate\\\"; fi\" >> ~/.bashrc; fi'"
 }
