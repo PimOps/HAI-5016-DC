@@ -1,0 +1,5 @@
+ipykernel
+ipywidgets
+langextract
+pandas
+requests
