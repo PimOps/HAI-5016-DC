@@ -1,5 +1,10 @@
 ipykernel
 ipywidgets
 langextract
+loguru
+matplotlib
 pandas
+python-dotenv
 requests
+seaborn
+streamlit
